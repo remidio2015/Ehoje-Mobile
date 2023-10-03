@@ -8,10 +8,10 @@ export default function Login({navigation}) {
     <SafeAreaView style={styles.container}>
       <View style={styles.containerWrapper}>
         <View style={styles.containerInput}>
-          <Input name="Email" type="text" placeholder="Email" />
+          <Input name="Email" onChange={()=>null} type="text" placeholder="Email" />
         </View>
         <View style={styles.containerInput}>
-          <Input name="Password" type="password" placeholder="Senha" />
+          <Input name="Password" onChange={()=>null} type="password" placeholder="Senha" />
         </View>
 
         <View style={styles.containerButton}>
