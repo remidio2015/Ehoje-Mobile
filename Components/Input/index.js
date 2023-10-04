@@ -19,13 +19,14 @@ export default function Input({
     <View style={styles.container}>
       <TextInput
         {...rest}
+        name={name}
         style={{ ...styles.input, ...style }}
         onChangeText={(value)=>{
             setValueInput(value)
             onChange(value)
         }}
         value={valueInput}
-          secureTextEntry={Type !='password' ? false : visiblePassword}
+          secureTextEntry={type !='password' ? false : visiblePassword}
         placeholder={placeholder}
       />
 
